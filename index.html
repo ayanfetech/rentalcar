@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=7,8,edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./main.css">
+		<title>Rent A Car</title>
+		<style>
+			html{
+				height: 100%;
+				width: 100%;
+			}
+			body{
+				color: #243264;
+				background-color: floralwhite;
+			}
+			.btn{
+				background-color: #fc6c4c;
+				color: antiquewhite;
+				padding: 10px 185px;
+				margin-top: 10px;
+				border-style: none;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 6px 6px 6px rgba(0, 0, 0, 0.5);
+			}
+			.btn:focus{
+				outline: none;
+			}
+			.btn:active{
+				transform: scale(0.8);
+			}
+			.btn:hover{
+				background-color: #fc6c4c;
+			}
+			.pe-10{
+				padding-right: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="container mt-3">
+				<div class="row gx-4 gx-lg-5 justify-content-center">
+					<div class="col-lg-8 col-xl-6">
+						<h1 class="mt-0">Search for a rental car</h1>
+						<form action=""  method="post">
+							
+							<label for="adrOfPickup" class="mt-2">Pick up location</label>
+							<div class="pe-10">
+								<input type="text" class="form-control" name="address" id="adrOfPickup" placeholder="City, airport, region, district...">
+							</div>
+							<div class="mt-2 hstack">
+								<input type="checkbox" name="deliveryElsewhere" id="deliveryElsewhere">
+								<label for="deliveryElsewhere" class="ms-1">Deliver the car somewhere else</label>
+							</div>
+							<div class="hstack mt-3">
+								<div>
+									<label for="dateOfPickup">Date of pickup</label>
+									<div class="row">
+										<div class="col-lg-12">
+											<select name="dateOfPickup" id="dateOfPickup" class="px-2 py-2 bg-white rounded">
+								<option value="23/03/2020">Sat 23 mar 2020
+								</option>
+								</select>
+										</div>
+										<div class="col-lg-12 mt-1">
+											<div class="hstack">
+												<select name="timeofpickup" id="minutes" class="px-3 py-2 rounded bg-white">
+								<option value="10" class="">10
+								</option>
+								</select>
+								<select name="timeofpickup" id="seconds" class="px-3 py-2 rounded bg-white">
+									<option value="00">00
+									</option>
+								</select>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="ms-4">
+									<label for="dateOfDelivery">Date of delivery</label>
+									<div class="row">
+										<div class="col-lg-12">
+											<select name="dateOfDelivery" id="dateOfDelivery" class="px-2 py-2 bg-white rounded">
+								<option value="23/03/2020">Tue 29 mar 2020
+								</option>
+								</select>
+										</div>
+										<div class="col-lg-12 mt-1">
+											<div class="hstack">
+												<select name="timeofdelivery" id="minutes" class="px-3 py-2 rounded bg-white">
+								<option value="10" class="">10
+								</option>
+								<option value="12" class="">12
+								</option>
+								<option value="02" class="">02
+								</option>
+								<option value="04" class="">04
+								</option>
+								</select>
+								<select name="timeofdelivery" id="seconds" class="px-3 py-2 rounded bg-white">
+									<option value="00">00
+									</option>
+									<option value="30">30
+									</option>
+								</select>
+											</div>
+						
+										</div>
+									</div>
+								</div>
+								</div>
+							<div class="hstack mt-3">
+								<input type="checkbox" name="agebetween30and65" id="agebetween30and65" checked>
+								<label for="agebetween30and65" class="ms-2">The driver's age between 30 and 65?</label>
+							</div>
+							<div class="vstack">
+								<li>No credit card fees</li>
+								<li>No exchange fees</li>
+								<li>Price match guarantee</li>
+							</div>
+							<button type="submit" class="btn text-center">Search</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
